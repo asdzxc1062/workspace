@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <style>
+
+#titles{
+    width: 800px;
+    float: left;
+    height: 170px;
+}
+   
+   #titles label{
+		background-color: #ccc;
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+
+	}
+
+   #titles input{
+		margin: 5px;
+		width: 400px;
+	}
+    
+   #title th{
+		background-color: rgb(35, 32, 32);
+		color: white;
+		width: 400px;
+	}
+
+    #btns button{
+	width: 100px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	padding : 5px;
+ }
+     
+    #list{
+        text-align: center;
+    }
+
+    #tbl{
+        min-width: 1280px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="show">
+      <h3>도서목록 페이지</h3>
+      <hr />
+      <div id="titles">
+        <label class="field">도서코드</label>
+        <input type="text" id="bookCode" /><br />
+        <label class="field">도서명</label>
+        <input type="text" id="bookName" /><br />
+        <label class="field">저자</label>
+        <input type="text" id="author" /><br />
+        <label class="field">출판사</label>
+        <input type="text" id="press" /><br />
+        <label class="field">금액</label> <input type="text" id="price" /><br />
+      </div>
+      <div id="btns">
+        <button type="button">저장</button>
+        <br />
+        <button type="button" id="cdl">선택삭제</button>
+      </div>
+      <table id="tbl" border="1">
+        <thead id="title">
+          <tr>
+            <th><input type="checkbox" /></th>
+            <th>도서코드</th>
+            <th>도서명</th>
+            <th>저자</th>
+            <th>출판사</th>
+            <th>가격</th>
+            <th>삭제</th>
+          </tr>
+        </thead>
+        <tbody id="list"></tbody>
+      </table>
+    </div>
+    <script src="js/book.js"></script>
+  </body>
+</html>
