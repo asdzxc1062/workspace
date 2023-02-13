@@ -31,6 +31,7 @@ $(document).ready(function () {
 	
 	$('#list').append(tr);
 	
+	
 	// 목록가져오는 Ajax 호출.
 	console.log($('#list'));
 	$.ajax({
@@ -101,6 +102,10 @@ $(document).ready(function () {
 				$('<td />').append($('<input class="auth"/>').val(resp)),
 				$('<td />').append($('<button onclick="updateMemberFnc(event)">수정</button>'))//.on('click', updateMemberFnc))
 			)
+			nTr = $('#template tr').clone(true);
+			ntr.find('input.name').val(name);
+			ntr.find('input.name').val(name);
+			
 			// 새로운 tr로 기존 tr을 대신.
 			$(this).replaceWith(nTr);
 		})

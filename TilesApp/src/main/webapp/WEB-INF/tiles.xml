@@ -14,7 +14,7 @@
     <put-attribute name="body" value="/WEB-INF/views/other/{1}.jsp" />
   </definition>
   
-  <definition name="myapp.app" template="/WEB-INF/layout/template.jsp">
+ <definition name="myapp.app" template="/WEB-INF/layout/template.jsp">
     <put-attribute name="title" value="Tiles Page" />
     <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
     <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
